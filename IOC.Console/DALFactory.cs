@@ -3,8 +3,9 @@ namespace IOC.Console
 {
 	public class DALFactory
 	{
-		public DALFactory()
+		public static IDAL GetDAL()
 		{
+			return new DAL();
 		}
 	}
 }

@@ -3,7 +3,7 @@ namespace IOC.Console
 {
 	public class BL
 	{
-		private static  DAL dal { get; set; }
+		private static  IDAL dal { get; set; }
 
 		public BL()
 		{

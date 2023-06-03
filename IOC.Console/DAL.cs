@@ -1,7 +1,7 @@
 ﻿using System;
 namespace IOC.Console
 {
-	public class DAL
+	public class DAL:IDAL
 	{
 		public List<Product> GetProducts()
 		{
