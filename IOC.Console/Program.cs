@@ -4,7 +4,8 @@ using IOC.Console;
 Console.WriteLine("Hello, World!");
 
 
-BL bl = new BL();
+BL bl = new BL(new OracleDAL());
+
 bl.GetProducts().ForEach(x =>
 {
     Console.WriteLine($"{x.Id} - {x.Name} - {x.Price} - {x.Stock}");

@@ -3,16 +3,16 @@ namespace IOC.Console
 {
 	public class BL
 	{
-		private static  IDAL dal { get; set; }
+		private static  IDAL _dal { get; set; }
 
-		public BL()
+		public BL(IDAL dal)
 		{
-			dal = DALFactory.GetDAL();
+			_dal = dal;
 		}
 
 		public List<Product> GetProducts()
 		{
-			return dal.GetProducts();
+			return _dal.GetProducts();
 		}
 
 	}
