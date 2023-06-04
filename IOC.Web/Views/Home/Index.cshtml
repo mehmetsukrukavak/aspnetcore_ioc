@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Singleton</h2> Request geldiğinde Bir kere oluşturulur ve hep o instance kullanılır.
+<h1>@ViewBag.time1</h1>
+<h1>@ViewBag.time2</h1>
+
+<h2>Scoped</h2> Request geldiğinde o scope için bir kere oluşturulur ve hep o instance kullanılır.
+<h1>@ViewBag.time3</h1>
+<h1>@ViewBag.time4</h1>
+
+
+<h2>Trancient</h2> Her instance istendiğinde  tekrar oluşturulur.
+<h1>@ViewBag.time5</h1>
+<h1>@ViewBag.time6</h1>
+
